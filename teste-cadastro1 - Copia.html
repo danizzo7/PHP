@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- combo multiplo -->
+<!-- combo multiplo -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+
+ <!-- css -->
+  <link href="css/estilo.css" rel="stylesheet" type="text/css">
+<title>Clever - Cadastro</title>
+</head>
+<header></header>
+
+<body>
+
+<script>
+	    $(document).ready(function() {
+        $('#faixadeatraso-checkboxes').multiselect({
+            includeSelectAllOption: true,
+			nonSelectedText: 'Selecione',
+			allSelectedText: 'Todos',
+			selectAllText: 'Todos',
+			maxHeight: 200,
+			templates: { button: '<button type="button" class="btcampomultiplo multiselect dropdown-toggle" data-toggle="dropdown"><span class="multiselect-selected-text "></span> </button>',
+						ul: '<ul class="campomultiplo-conteudo multiselect-container dropdown-menu"></ul>',
+
+}
+
+
+        });
+    });
+
+	 $(document).ready(function() {
+        $('#operador-checkboxes').multiselect({
+          includeSelectAllOption: true,
+			nonSelectedText: 'Selecione',
+			allSelectedText: 'Todos',
+			selectAllText: 'Todos',
+            enableFiltering: true,
+			enableCaseInsensitiveFiltering: true,
+			enableClickableOptGroups: true,
+			maxHeight: 200,
+            filterPlaceholder: 'Buscar',
+			templates: { button: '<button type="button" class="btcampomultiplo multiselect dropdown-toggle" data-toggle="dropdown"><span class="btcampomultiploselect multiselect-selected-text "></span></button>',
+						ul: '<ul class="btcampomultiploselect campomultiplo-conteudo multiselect-container dropdown-menu"></ul>',
+
+}
+
+
+        });
+    });
+
+	    $(document).ready(function() {
+        $('#carteira-multiple').multiselect({
+          includeSelectAllOption: false,
+			nonSelectedText: 'CREDZ',
+
+			templates: { button: '<button type="button" class="btcampomultiplo multiselect dropdown-toggle" data-toggle="dropdown"><span class="multiselect-selected-text "></span> </button>',
+						ul: '<ul class="campomultiplo-conteudo multiselect-container dropdown-menu"></ul>',
+
+}
+
+
+        });
+    });
+
+	    $(document).ready(function() {
+        $('#estado-checkboxes').multiselect({
+          includeSelectAllOption: true,
+			nonSelectedText: 'Selecione',
+			allSelectedText: 'Todos',
+			selectAllText: 'Todos',
+			maxHeight: 200,
+			templates: { button: '<button type="button" class="btcampomultiplo multiselect dropdown-toggle" data-toggle="dropdown"><span class="multiselect-selected-text "></span> </button>',
+						ul: '<ul class="campomultiplo-conteudo multiselect-container dropdown-menu"></ul>',
+
+}
+
+
+        });
+    });
+</script>
+
+<!-- inicio menu lateral oculto -->
+
+<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" ><img src="images/seta-fechar.png" width="8" height="14" alt=""></a>
+  <button class="dropdown-btn">Cadastro</button>
+  <div class="dropdown-container"> <a href="index.html">
+    <div class="iconeseta">Faixa de Atraso</div>
+    </a> <a href="relatorio2.html">
+    <div class="iconeseta">Recuperação Valor</div>
+    </a> <a href="relatorio3.html">
+    <div class="iconeseta">Recuperação Quantidade</div>
+    </a> </div>
+</div>
+
+<!-- fim menu lateral oculto -->
+
+<div id="main">
+  <div class="topo">
+    <div class="logoclever"></div>
+    <div class="btmenu"><a href="#" onclick="openNav()">MENU</a></div>
+    <div class="btsair"><a href="#">SAIR</a></div>
+    <div class="btusuario">
+      <div class="usuario">USUARIO<span>Nome do usuário</span></div>
+    </div>
+  </div>
+  <div class="fundo">
+    <div class="exportar">
+      <button id="myBtn" class="btexcell"> ANALÍTICO</button>
+    </div>
+    <div class="breadcrumb">Cadastro &gt;<span class="ativo">Cliente</span></div>
+    <div class="conteudo">
+
+      <!-- ABA CONSOLIDADO -->
+   <form method="post" action="Cadastro.php>
+    </div>
+    <div class="conteudo">
+
+        <div id="consolidado" class="abaconteudo">
+          <div>
+            <div class="blococampoconteudo">
+              <div class="blococampo">
+                <div class="blococampolinha">
+                  <div class="col-10">Código do Cliente:</div>
+                  <div class="col-10">
+                    <input name="cod-cliente" type="text" class="campo">
+                  </div>
+                </div>
+                <div class="blococampolinha">
+                  <div class="col-10">Nome:</div>
+                  <div class="col-25">
+                    <input name="nome_cliente" type="text" class="campo">
+                  </div>
+                </div>
+                <div class="blococampolinha">
+                  <div class="col-10">Data de Nascimento:</div>
+                  <div class="col-11">
+                    <input name="data-nascimento" type="date" class="campodata">
+                  </div>
+                </div>
+                <div class="blococampolinha">
+                  <div class="col-10">Profissão:</div>
+                  <div class="col-20">
+                    <input name="profissao" type="text" class="campo">
+                  </div>
+                </div>
+                <div class="blococampolinha">
+                  <div class="col-10">Empresa Atual:</div>
+                  <div class="col-25">
+                    <input name="empresa_atual" type="text" class="campo">
+                  </div>
+                </div>
+                <div class="blococampolinha">
+                  <div class="center">
+                    <input type="submit" class="botao" value="INCLUIR">
+                    <a onClick="window.location='cadastro.php';">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- FIM ABA CONSOLIDADO -->
+
+      <!-- ABA LISTA DE CLIENTES -->
+    <!--</div>
+    <div class="conteudo">
+      <form method="GET">-->
+        <div id="listaCliente" class="abaconteudo">
+          <script src="https//aja.googlewapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <table width="625" border="0">
+            <span id ="conteudo" ></span>
+          <script>
+            $ (document).ready(function() {
+            $.post(listar.php, function(retorna) {
+            $("#conteudo" ).(retona);
+            });
+             });
+          </script>
+            <tr>
+            <th>Codigo do Cliemte</th>
+            <th>Nome</th>
+              <th>Data Nascimento</th>
+               <th>Profissao</th>
+               <th>Empresa Atual</th>
+          </tr>
+            </tr>
+            <tr>
+            <td></td>
+            <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td id="tabela_linha_1"><input type="button" class="botao" value="Alterar" action="Alterar.php" > </td>
+              <td id="tabela_linha_1"><input type="button" class="botao" value="Excluir" action="Excluir.php" ></td>
+
+            </tr>
+            <tr>
+            <td></td>
+            <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td id="tabela_linha_1"><input type="button" class="botao" value="Alterar" > </td>
+              <td id="tabela_linha_1"><input type="button" class="botao" value="Excluir" ></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td id="tabela_linha_1"><input type="button" class="botao" value="Alterar" > </td>
+              <td id="tabela_linha_1"><input type="button" class="botao" value="Excluir" ></td>
+            </tr>
+             <tr>
+            <td></td>
+            <td></td>
+               <td></td>
+              <td></td>
+              <td></td>
+               <td id="tabela_linha_1"><input type="button" class="botao" value="Alterar" > </td>
+              <td id="tabela_linha_1"><input type="button" class="botao" value="Excluir" ></td>
+            </tr>
+            </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- FIM ABA CONSOLIDADO -->
+
+    </div>
+  </div>
+</div>
+
+<!-- javascript menu lateral -->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "200px";
+	document.getElementById("header").style.marginLeft = "200px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("header").style.marginLeft = "0";
+}
+</script>
+
+<!-- Inicio Javascript -->
+<!-- menu jquery -->
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.btcampomultiplo')) {
+    var dropdowns = document.getElementsByClassName(".campomultiplo-conteudo");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<!-- javascript menu lateral -->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "200px";
+	document.getElementById("header").style.marginLeft = "200px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("header").style.marginLeft = "0";
+}
+</script>
+
+
+
+<!-- Inicio Javascript -->
+<!-- menu jquery -->
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.btcampomultiplo')) {
+    var dropdowns = document.getElementsByClassName(".campomultiplo-conteudo");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</form>
+</body>
+</html>
